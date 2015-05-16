@@ -1,3 +1,5 @@
+[ ![Codeship Status for cdaringe/coins-notify](https://codeship.com/projects/171c47e0-ddab-0132-124a-5604aedd125f/status?branch=master)](https://codeship.com/projects/80303)
+
 # coins-notify
 show notifications in the browser. attempts to use 'growl' like notifications first, but falls back on notifyjs (jQuery plugin) if the browser user has not accepted (or has denied) growl like notifications.
 
