@@ -14,9 +14,11 @@ notifier.push({
     className: 'info'
 });
 ```
-<img src="https://raw.githubusercontent.com/cdaringe/coins-notify/master/img/coins-notify-growl.png" height="50%" />
+###### default, os/growl mode
+<img src="https://raw.githubusercontent.com/cdaringe/coins-notify/master/img/coins-notify-growl.png" height="100px" />
 
-<img src="https://raw.githubusercontent.com/cdaringe/coins-notify/master/img/coins-notify-notifyjs.png" style="height:50%;" />
+###### fallback mode
+<img src="https://raw.githubusercontent.com/cdaringe/coins-notify/master/img/coins-notify-notifyjs.png" height="100px" />
 
 
 # api
