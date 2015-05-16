@@ -14,6 +14,10 @@ notifier.push({
     className: 'info'
 });
 ```
+<img src="https://raw.githubusercontent.com/cdaringe/coins-notify/master/img/coins-notify-growl.png" height="50%" />
+
+<img src="https://raw.githubusercontent.com/cdaringe/coins-notify/master/img/coins-notify-notifyjs.png" style="height:50%;" />
+
 
 # api
 ## Notify(opts) [constructor]
