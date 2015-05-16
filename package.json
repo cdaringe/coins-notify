@@ -19,6 +19,7 @@
     "notifyjs": "^1.2.5"
   },
   "devDependencies": {
+    "browserify": "^10.2.0",
     "domready": "^1.0.8",
     "jquery": "^2.1.4",
     "tape": "^4.0.0",
