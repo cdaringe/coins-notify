@@ -1,10 +1,14 @@
 {
   "name": "coins-notify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "show notifications in the browser. use 'growl' like notifications first, or notifyjs (jQuery plugin) as the fallback",
   "main": "index.js",
   "scripts": {
     "test": "testem ci"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdaringe/coins-notify"
   },
   "keywords": [
     "coins",
