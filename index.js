@@ -96,7 +96,7 @@ Notifier.prototype._pushDefault = function(options) {
     var notification = new Notify('COINS', {
         body: options.body || null,
         icon: options.icon || (window.location.origin + '/coins_core/graphics/logo-brain-flat.png'),
-        tag: options.tag || null,
+        tag: options.tag || Date.now(),
         timeout: options.timeout ? (options.timeout/1000) : (this.defaultTimeout/1000),
         notifyShow: options.notifyShow || null,
         notifyClose: options.notifyClose || null,
