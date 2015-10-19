@@ -1,10 +1,10 @@
 {
   "name": "coins-notify",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "show notifications in the browser. use 'growl' like notifications first, or notifyjs (jQuery plugin) as the fallback",
   "main": "index.js",
   "scripts": {
-    "test": "testem ci -p 7358  ",
+    "test": "echo 'please run tests manually via `testem`'",
     "preversion": "git checkout master && git pull && npm ls",
     "publish-patch": "npm run preversion && npm version patch && git push origin master --tags && npm publish",
     "publish-minor": "npm run preversion && npm version minor && git push origin master --tags && npm publish",
