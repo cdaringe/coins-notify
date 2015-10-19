@@ -19,21 +19,14 @@ function Notifier(options) {
     options = options || {};
     this.queue = [];
     this.maxQueue = options.maxQueue || 500;
-    if (!window.Notification && !Notify.isSupported()) {
-        this.isDefault = false; // use alt notifications
-    } else if (Notify.permissionLevel === 'granted') {
+    this.isDefault = false; // default to fallback until we know we are supported
+    if (window.Notification && !Notify.needsPermission) {
         this.isDefault = true;
-    } else if (Notify.permissionLevel === 'denied') {
-        this.isDefault = false;
-    } else {
-        if (Notify.needsPermission) {
-            Notify.requestPermission(
-                function handleNotifyPermGranted() {self.isDefault = true; },
-                function handleNotifyPermDenied() {self.isDefault = false; }
-            );
-        } else {
-            this.isDefault = false;
-        }
+    } else if (window.Notification && Notify.isSupported()) {
+        Notify.requestPermission(
+            function handleNotifyPermGranted() {self.isDefault = true; },
+            function handleNotifyPermDenied() {self.isDefault = false; }
+        );
     }
     this.defaultTimeout = 5000; // ms
 }
