@@ -4,7 +4,12 @@
   "description": "show notifications in the browser. use 'growl' like notifications first, or notifyjs (jQuery plugin) as the fallback",
   "main": "index.js",
   "scripts": {
-    "test": "testem ci --port=10105"
+    "test": "testem ci --port=10105",
+    "preversion": "git checkout master && git pull && npm ls",
+    "publish-patch": "npm run preversion && npm version patch && git push origin master --tags && npm publish",
+    "publish-minor": "npm run preversion && npm version minor && git push origin master --tags && npm publish",
+    "publish-major": "npm run preversion && npm version major && git push origin master --tags && npm publish"
+
   },
   "pre-commit": [
     "test"
