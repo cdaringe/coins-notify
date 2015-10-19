@@ -1,6 +1,6 @@
 {
   "name": "coins-notify",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "show notifications in the browser. use 'growl' like notifications first, or notifyjs (jQuery plugin) as the fallback",
   "main": "index.js",
   "scripts": {
