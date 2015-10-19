@@ -4,9 +4,9 @@
         "test/*.js"
     ],
     "serve_files": [
-        "bundle.js"
+        "/tmp/testem-test-bundle.js"
     ],
-    "before_tests": "browserify test/test.js > bundle.js",
+    "before_tests": "browserify test/test.js > /tmp/testem-test-bundle.js",
     "on_exit": "rm bundle.js",
     "launch_in_dev": ["Chrome"]
 }
