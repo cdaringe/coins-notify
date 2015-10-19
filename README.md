@@ -44,3 +44,6 @@ notifier.push({
 - `notifyClose` *function* callback
 - `notifyClick` *function* callback
 - `notifyError` *function* callback
+
+# changelog
+- 1.1.5 - improve fallback mode

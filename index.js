@@ -19,7 +19,7 @@ function Notifier(options) {
     options = options || {};
     this.queue = [];
     this.maxQueue = options.maxQueue || 500;
-    if (!Notify.isSupported) {
+    if (!window.Notification && !Notify.isSupported()) {
         this.isDefault = false; // use alt notifications
     } else if (Notify.permissionLevel === 'granted') {
         this.isDefault = true;
