@@ -4,9 +4,11 @@
   "description": "show notifications in the browser. use 'growl' like notifications first, or notifyjs (jQuery plugin) as the fallback",
   "main": "index.js",
   "scripts": {
-    "test": "testem ci"
+    "test": "testem ci --port=10105"
   },
-  "pre-commit": ["test"],
+  "pre-commit": [
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/cdaringe/coins-notify"
@@ -21,7 +23,8 @@
   "author": "cdaringe",
   "license": "MIT",
   "dependencies": {
-    "notifyjs": "^1.2.5"
+    "notifyjs": "^1.2.8",
+    "testem": "^0.9.8"
   },
   "devDependencies": {
     "browserify": "^10.2.0",
