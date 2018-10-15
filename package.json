@@ -28,12 +28,12 @@
   "author": "cdaringe",
   "license": "MIT",
   "dependencies": {
-    "notifyjs": "^1.2.8"
+    "notifyjs": "^3.0.0"
   },
   "devDependencies": {
     "browserify": "^10.2.0",
     "domready": "^1.0.8",
-    "jquery": "^2.1.4",
+    "jquery": "^3.3.1",
     "precommit-hook": "^2.0.1",
     "tape": "^4.0.0",
     "testem": "^0.9.8"
