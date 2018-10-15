@@ -2,6 +2,8 @@
 var Notify = require('notifyjs'),
     jQuery = window.jQuery;
 
+jQuery.notify = Notify;
+
 if (!jQuery.notify) {
     throw new Error('jquery notifyjs plugin not found');
 }
